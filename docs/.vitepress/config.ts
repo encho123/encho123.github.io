@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Find myself",
   description: "try to find myself,we all need this",
-  base: '/encho123.github.io/',
+  base: '/qcsy/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

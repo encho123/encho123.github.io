@@ -17,15 +17,22 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
+    // siteTitle: 'My Custom Title',
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'mytest', link: 'this is another' }
+      { text: 'mytest', link: 'sth by me' },
+      { text: 'Guide', link: '/guide/' },
+      { text: 'expector', link: 'this is another' },
 
     ],
 
+    // 侧边栏  数组形式
     sidebar: [
+
+      // examples
       {
         text: 'Examples',
         items: [
@@ -33,9 +40,40 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/api-examples' },
           { text: 'By me', link: '/sth by me' }
         ]
-      }
+      },
+      //加入了mytest
+      {
+        text: 'mytest',
+        items: [
+          { text: 'Item A', link: '/item-1' },
+          { text: 'Item B', link: '/item-2' },
+          {
+            text: 'Item C',
+            items: [
+              { text: 'Item C1', link: '/item-3-1' },
+              { text: 'Item C2', link: '/item-3-2' }
+            ]
+          }
+        ]
+      },
     ],
 
+    // 侧边栏  对象形式
+    // sidebar: {
+    //   '/guide/': [
+    //     {
+    //       text: 'Guide',
+    //       items: [
+    //         { text: 'xxx', link: '/guide/xxx' },
+    //         { text: 'One', link: '/guide/one' },
+    //         { text: 'Two', link: '/guide/two' }
+    //       ]
+    //     }
+    //   ],
+    // },
+
+
+    // 社交链接
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
       { icon: 'facebook', link: 'https://github.com/vuejs/vitepress' },

@@ -2,7 +2,7 @@
   "devDependencies": {
     "vitepress": "^1.0.0-beta.3"
   },
-  "name": "viterpress",
+  "name": "vitepress",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
